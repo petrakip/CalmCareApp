@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallSupport"
+    android:background="@drawable/rectangle1">
+
+    <TextView
+        android:id="@+id/callSupportTitleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FF80AB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/callSupportTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Κλήσεις Ψυχολογικής Υποστήριξης"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/callSupportTitleContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/goBackFromCallSupportToMain"
+        app:layout_constraintTop_toTopOf="@+id/callSupportTitleContainer"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <Button
+        android:id="@+id/goBackFromCallSupportToMain"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/arrow_back_icon"
+        android:layout_marginStart="10dp"
+        android:contentDescription="Go Back"
+        app:layout_constraintBottom_toBottomOf="@+id/callSupportTitleContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/callSupportTitleContainer" />
+
+    <Button
+        android:id="@+id/familiarCallOperation"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/callSupportTitleContainer"
+        app:layout_constraintBottom_toTopOf="@+id/doctorCallOperation"/>
+
+    <TextView
+        android:id="@+id/familiarCallOperationText"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="Οικείο Πρόσωπο"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/familiarCallOperation"
+        app:layout_constraintEnd_toEndOf="@+id/familiarCallOperation"
+        app:layout_constraintTop_toTopOf="@+id/familiarCallOperation"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/familiarCallOperationIcon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/familiar_icon"
+        app:layout_constraintEnd_toStartOf="@+id/familiarCallOperationText"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="@+id/familiarCallOperation"
+        app:layout_constraintTop_toTopOf="@+id/familiarCallOperation" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/phone_call_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/familiarCallOperation"
+        app:layout_constraintEnd_toStartOf="@+id/familiarCallOperationText"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/familiarCallOperation"
+        app:layout_constraintTop_toBottomOf="@+id/familiarCallOperationIcon"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/doctorCallOperation"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/familiarCallOperation"
+        app:layout_constraintStart_toStartOf="@+id/familiarCallOperation"
+        app:layout_constraintTop_toBottomOf="@+id/familiarCallOperation"
+        app:layout_constraintBottom_toTopOf="@+id/callSupportOperation"/>
+
+    <TextView
+        android:id="@+id/doctorCallOperationText"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="Γιατρός"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/doctorCallOperation"
+        app:layout_constraintEnd_toEndOf="@+id/doctorCallOperation"
+        app:layout_constraintTop_toTopOf="@+id/doctorCallOperation" />
+
+    <TextView
+        android:id="@+id/doctorCallOperationIcon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/doctor_icon"
+        app:layout_constraintEnd_toStartOf="@+id/doctorCallOperationText"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="@+id/doctorCallOperation"
+        app:layout_constraintTop_toTopOf="@+id/doctorCallOperation" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/phone_call_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/doctorCallOperation"
+        app:layout_constraintEnd_toStartOf="@+id/doctorCallOperationText"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/doctorCallOperation"
+        app:layout_constraintTop_toBottomOf="@+id/doctorCallOperationIcon"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/callSupportOperation"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/doctorCallOperation"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/doctorCallOperation"
+        app:layout_constraintTop_toBottomOf="@+id/doctorCallOperation"
+        app:layout_constraintBottom_toTopOf="@+id/sosCallOperation" />
+
+    <TextView
+        android:id="@+id/callSupportOperationText"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="Γραμμή Υποστήριξης"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/callSupportOperation"
+        app:layout_constraintEnd_toEndOf="@+id/callSupportOperation"
+        app:layout_constraintTop_toTopOf="@+id/callSupportOperation"/>
+
+    <TextView
+        android:id="@+id/callSupportOperationIcon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/support_call"
+        app:layout_constraintEnd_toStartOf="@+id/callSupportOperationText"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="@+id/callSupportOperation"
+        app:layout_constraintTop_toTopOf="@+id/callSupportOperation" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/phone_call_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/callSupportOperation"
+        app:layout_constraintEnd_toStartOf="@+id/callSupportOperationText"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/callSupportOperation"
+        app:layout_constraintTop_toBottomOf="@+id/callSupportOperationIcon"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/sosCallOperation"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/callSupportOperation"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/callSupportOperation"
+        app:layout_constraintTop_toBottomOf="@+id/callSupportOperation"
+        app:layout_constraintBottom_toTopOf="@+id/callSupportMic"
+        app:layout_constraintVertical_bias="0.656" />
+
+    <TextView
+        android:id="@+id/sosCallOperationText"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="Έκτακτη Βοήθεια"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sosCallOperation"
+        app:layout_constraintEnd_toEndOf="@+id/sosCallOperation"
+        app:layout_constraintTop_toTopOf="@+id/sosCallOperation" />
+
+    <TextView
+        android:id="@+id/sosCallOperationIcon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/sos_icon"
+        app:layout_constraintEnd_toStartOf="@+id/sosCallOperationText"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="@+id/sosCallOperation"
+        app:layout_constraintTop_toTopOf="@+id/sosCallOperation" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/sos_phone_call_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/sosCallOperation"
+        app:layout_constraintEnd_toStartOf="@+id/sosCallOperationText"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/sosCallOperation"
+        app:layout_constraintTop_toBottomOf="@+id/sosCallOperationIcon"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/callSupportMic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/mic_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

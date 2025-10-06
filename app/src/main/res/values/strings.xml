@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">diamonds</string>
+
+    <!-- GPS strings-->
+    <string name="locationMessage"><u>Που βρίσκομαι?</u></string>
+
+    <!-- Emotional Calendar strings-->
+    <string name="calendar_notes"><u>Σημειώσεις:</u></string>
+    <string name="calendar_settings">Ρυθμίσεις Ημερολογίου</string>
+    <string name="daily_moods">ΚΑΘΗΜΕΡΙΝΕΣ ΔΙΑΘΕΣΕΙΣ</string>
+    <string name="speak_calendar_operation">Speak Calendar Operation</string>
+    <string name="previous_month_description">Previous month</string>
+    <string name="default_monthAndYear_text">Oct 2020</string>
+    <string name="next_month_description">Next month</string>
+    <string name="Sunday">S</string>
+    <string name="Monday">M</string>
+    <string name="Tuesday">T</string>
+    <string name="Wednesday">W</string>
+    <string name="Thursday">T</string>
+    <string name="Friday">F</string>
+    <string name="Saturday">S</string>
+    <string name="happy_calendar_choice">Happy</string>
+    <string name="number_of_happy_choice">0</string>
+    <string name="good_calendar_choice">Good</string>
+    <string name="neutral_calendar_choice">Neutral</string>
+    <string name="bad_calendar_choice">Bad</string>
+    <string name="worst_calendar_choice">Worst</string>
+    <string name="number_of_good_choice">0</string>
+    <string name="number_of_neutral_choice">0</string>
+    <string name="number_of_bad_choice">0</string>
+    <string name="number_of_worst_choice">0</string>
+    <string name="no_notes_yet">Δεν υπάρχουν σημειώσεις για αυτήν την ημέρα</string>
+    <string name="default_day_text">2</string>
+
+    <!-- Main Activity strings-->
+    <string name="calm_care_logo">Calm Care</string>
+    <string name="time_text">Time</string>
+    <string name="date_text">Date</string>
+    <string name="default_speed_perHour_wind">10 km/h</string>
+    <string name="default_humidity_text">60%</string>
+    <string name="default_celcius_degree">25°</string>
+    <string name="default_city_text">City</string>
+    <string name="operation4_text">Χαλαρωτική Μουσική</string>
+    <string name="operation3_text">Κλήσεις Ψυχολογικής Υποστήριξης</string>
+    <string name="operation2_text">Ημερολόγιο Διάθεσης</string>
+    <string name="operation1_text">Ασκήσεις Χαλάρωσης</string>
+
+    <!-- Music Media Player strings-->
+    <string name="song_title">Song Title</string>
+    <string name="music_player_image">Music Player Image</string>
+    <string name="music_player_tracklist">Music Player Tracklist</string>
+    <string name="default_duration">00:00</string>
+    <string name="default_song_title">Song Title</string>
+    <string name="go_home">Go Home</string>
+    <string name="play_button">play_button</string>
+    <string name="previous_button">previous_button</string>
+    <string name="next_button">next_button</string>
+    <string name="min_volume_icon">min_volume_icon</string>
+    <string name="max_volume_icon">max_volume_icon</string>
+
+    <!-- Exercises Guidance strings-->
+    <string name="start">Έναρξη</string>
+    <string name="simple_exercise_choice_string">Περιγραφικές \nΑσκήσεις</string>
+    <string name="video_exercise_choice_string">Βίντεο \nΑσκήσεων</string>
+    <string name="animation_exercise_string">Διαδραστική \nΆσκηση \nΑναπνοής</string>
+    <string name="relaxation_exercises_string">Ασκήσεις Χαράλωσης</string>
+    <string name="animation_title_string">Αναπνοή μετρώντας ως το 5</string>
+    <string name="default_animation_time_value">05:00</string>
+    <string name="exercise_description_string">Περιγραφή άσκησης</string>
+    <string name="exercise_title_string">Τίτλος Άσκησης</string>
+    <string name="simple_exercises_title_string">Απλές Ασκήσεις Χαράλωσης</string>
+    <string name="video_exercises_title_string">Βίντεο Ασκήσεων Χαράλωσης</string>
+    <string name="video_list">Video List</string>
+    <string name="video_description_string">Περιγραφή βίντεο</string>
+    <string name="video_title_string">Τίτλος Βίντεο</string>
+</resources>

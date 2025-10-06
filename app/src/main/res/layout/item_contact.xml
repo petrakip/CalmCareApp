@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/glass_background"
+    android:layout_margin="10dp"
+    android:elevation="12dp">
+
+    <ImageView
+        android:id="@+id/imageContactView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="28dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/contact_person_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/contactName"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Contact Name"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageContactView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toEndOf="@+id/imageContactView"
+        app:layout_constraintTop_toTopOf="@+id/imageContactView"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <TextView
+        android:id="@+id/contactPhone"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="6900000000"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageContactView"
+        app:layout_constraintEnd_toEndOf="@+id/contactName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/contactName"
+        app:layout_constraintTop_toBottomOf="@+id/contactName" />
+
+    <Button
+        android:id="@+id/removeContactBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/remove_icon"
+        android:contentDescription="remove contact"
+        app:layout_constraintBottom_toBottomOf="@+id/contactPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/contactName"
+        app:layout_constraintVertical_bias="0.529"
+        tools:ignore="TouchTargetSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

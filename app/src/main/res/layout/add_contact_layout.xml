@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="12dp">
+
+    <ImageView
+        android:id="@+id/contactImageSelect"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/contact_person_icon"
+        android:scaleType="centerCrop"
+        android:contentDescription="Επιλογή Εικόνας"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/editContactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Όνομα Επαφής"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editContactPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Αριθμός Τηλεφώνου"
+        android:inputType="phone"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/voiceAddContactBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/mic_icon"
+        android:contentDescription="Φωνητική Εισαγωγή" />
+</LinearLayout>

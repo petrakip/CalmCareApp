@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BreathAnimationPulse"
+
+    android:background="@drawable/rectangle1">
+
+    <TextView
+        android:id="@+id/animationExerciseContainer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FF9E80"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pulseAnimationTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/animation_title_string"
+        android:layout_marginEnd="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/goRelaxationExercisesFromAnimation"
+        app:layout_constraintEnd_toEndOf="@+id/animationExerciseContainer"
+        app:layout_constraintStart_toEndOf="@+id/goRelaxationExercisesFromAnimation"
+        app:layout_constraintTop_toTopOf="@+id/goRelaxationExercisesFromAnimation" />
+
+    <TextView
+        android:id="@+id/goRelaxationExercisesFromAnimation"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/go_back_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/animationExerciseContainer"
+        app:layout_constraintStart_toStartOf="@+id/animationExerciseContainer"
+        app:layout_constraintTop_toTopOf="@+id/animationExerciseContainer" />
+
+    <TextView
+        android:id="@+id/breathText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/description_rectangle"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/pulseAnimationTitle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/pulseAnimationTitle"
+        app:layout_constraintTop_toBottomOf="@+id/animationExerciseContainer" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="20dp"
+        android:text="@string/default_animation_time_value"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/breathText"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="@+id/breathText"
+        app:layout_constraintTop_toBottomOf="@+id/breathText" />
+
+    <ImageView
+        android:id="@+id/imgAnimation"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/simple_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/timerText"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/timerText"
+        app:layout_constraintTop_toBottomOf="@+id/timerText"
+        app:layout_constraintVertical_bias="0.457" />
+
+    <Button
+        android:id="@+id/breathBtn"
+        style="@style/AppTheme.ButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/start"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAnimation"
+        app:layout_constraintEnd_toEndOf="@+id/imgAnimation"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgAnimation"
+        app:layout_constraintTop_toTopOf="@+id/imgAnimation"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
