@@ -44,7 +44,7 @@ import androidx.core.content.ContextCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String API_KEY = "a24dbf8b22c77f3c324c8b8fdbf131b9";
+    private static final String API_KEY = "";
     private static final int LOCATION_SETTINGS_REQUEST = 2001;
     private static final int VOICE_RECOGNITION_REQUEST_CODE = 1234;
 
